@@ -101,8 +101,8 @@
             // 
             // customButton2
             // 
-            this.customButton2.BackColor = System.Drawing.Color.Gold;
-            this.customButton2.BackgroundColor = System.Drawing.Color.Gold;
+            this.customButton2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(128)))));
+            this.customButton2.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(128)))));
             this.customButton2.BorderColor = System.Drawing.Color.Transparent;
             this.customButton2.BorderRadius = 0;
             this.customButton2.BorderSize = 0;
