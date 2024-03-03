@@ -35,5 +35,13 @@ namespace Thesis
         {
 
         }
+
+        private void customButton3_Click(object sender, EventArgs e)
+        {
+            LoginForm lf = new LoginForm();
+            lf.FormClosed += (s, args) => this.Close(); // Close Form1 when Form2 is closed
+            lf.Show();
+            this.Hide(); // Hide Form1
+        }
     }
 }

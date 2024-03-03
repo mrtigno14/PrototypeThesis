@@ -29,10 +29,10 @@
         private void InitializeComponent()
         {
             this.splitContainer1 = new System.Windows.Forms.SplitContainer();
+            this.customButton2 = new CustomControls.RJControls.CustomButton1();
             this.customButton1 = new CustomControls.RJControls.CustomButton1();
             this.panel1 = new System.Windows.Forms.Panel();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
-            this.customButton2 = new CustomControls.RJControls.CustomButton1();
             ((System.ComponentModel.ISupportInitialize)(this.splitContainer1)).BeginInit();
             this.splitContainer1.Panel1.SuspendLayout();
             this.splitContainer1.Panel2.SuspendLayout();
@@ -58,8 +58,27 @@
             // 
             this.splitContainer1.Panel2.Controls.Add(this.pictureBox1);
             this.splitContainer1.Size = new System.Drawing.Size(1466, 1061);
-            this.splitContainer1.SplitterDistance = 487;
+            this.splitContainer1.SplitterDistance = 526;
             this.splitContainer1.TabIndex = 0;
+            // 
+            // customButton2
+            // 
+            this.customButton2.BackColor = System.Drawing.Color.Gold;
+            this.customButton2.BackgroundColor = System.Drawing.Color.Gold;
+            this.customButton2.BorderColor = System.Drawing.Color.Transparent;
+            this.customButton2.BorderRadius = 0;
+            this.customButton2.BorderSize = 0;
+            this.customButton2.FlatAppearance.BorderSize = 0;
+            this.customButton2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.customButton2.Font = new System.Drawing.Font("Arial", 24F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.customButton2.ForeColor = System.Drawing.Color.Black;
+            this.customButton2.Location = new System.Drawing.Point(103, 911);
+            this.customButton2.Name = "customButton2";
+            this.customButton2.Size = new System.Drawing.Size(369, 69);
+            this.customButton2.TabIndex = 5;
+            this.customButton2.Text = "Pay";
+            this.customButton2.TextColor = System.Drawing.Color.Black;
+            this.customButton2.UseVisualStyleBackColor = false;
             // 
             // customButton1
             // 
@@ -98,25 +117,6 @@
             this.pictureBox1.TabIndex = 0;
             this.pictureBox1.TabStop = false;
             this.pictureBox1.Click += new System.EventHandler(this.pictureBox1_Click);
-            // 
-            // customButton2
-            // 
-            this.customButton2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(128)))));
-            this.customButton2.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(128)))));
-            this.customButton2.BorderColor = System.Drawing.Color.Transparent;
-            this.customButton2.BorderRadius = 0;
-            this.customButton2.BorderSize = 0;
-            this.customButton2.FlatAppearance.BorderSize = 0;
-            this.customButton2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.customButton2.Font = new System.Drawing.Font("Arial", 24F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.customButton2.ForeColor = System.Drawing.Color.Black;
-            this.customButton2.Location = new System.Drawing.Point(103, 911);
-            this.customButton2.Name = "customButton2";
-            this.customButton2.Size = new System.Drawing.Size(369, 69);
-            this.customButton2.TabIndex = 5;
-            this.customButton2.Text = "Pay";
-            this.customButton2.TextColor = System.Drawing.Color.Black;
-            this.customButton2.UseVisualStyleBackColor = false;
             // 
             // Form3
             // 

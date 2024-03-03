@@ -30,6 +30,7 @@
         {
             this.customButton1 = new CustomControls.RJControls.CustomButton1();
             this.customButton2 = new CustomControls.RJControls.CustomButton1();
+            this.customButton3 = new CustomControls.RJControls.CustomButton1();
             this.SuspendLayout();
             // 
             // customButton1
@@ -72,11 +73,32 @@
             this.customButton2.UseVisualStyleBackColor = false;
             this.customButton2.Click += new System.EventHandler(this.customButton2_Click);
             // 
+            // customButton3
+            // 
+            this.customButton3.BackColor = System.Drawing.Color.Gold;
+            this.customButton3.BackgroundColor = System.Drawing.Color.Gold;
+            this.customButton3.BorderColor = System.Drawing.Color.Transparent;
+            this.customButton3.BorderRadius = 0;
+            this.customButton3.BorderSize = 0;
+            this.customButton3.FlatAppearance.BorderSize = 0;
+            this.customButton3.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.customButton3.Font = new System.Drawing.Font("Arial", 24F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.customButton3.ForeColor = System.Drawing.Color.Black;
+            this.customButton3.Location = new System.Drawing.Point(12, 12);
+            this.customButton3.Name = "customButton3";
+            this.customButton3.Size = new System.Drawing.Size(369, 69);
+            this.customButton3.TabIndex = 5;
+            this.customButton3.Text = "Admin";
+            this.customButton3.TextColor = System.Drawing.Color.Black;
+            this.customButton3.UseVisualStyleBackColor = false;
+            this.customButton3.Click += new System.EventHandler(this.customButton3_Click);
+            // 
             // Form2
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.customButton3);
             this.Controls.Add(this.customButton2);
             this.Controls.Add(this.customButton1);
             this.Name = "Form2";
@@ -89,5 +111,6 @@
         #endregion
         private CustomControls.RJControls.CustomButton1 customButton1;
         private CustomControls.RJControls.CustomButton1 customButton2;
+        private CustomControls.RJControls.CustomButton1 customButton3;
     }
 }
