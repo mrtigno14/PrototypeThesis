@@ -26,9 +26,9 @@ namespace Thesis
 
         private void customButton2_Click(object sender, EventArgs e)
         {
-            Form2 f2 = new Form2();
-            f2.FormClosed += (s, args) => this.Close(); 
-            f2.Show();
+            Form1 f1 = new Form1();
+            f1.FormClosed += (s, args) => this.Close(); 
+            f1.Show();
             this.Hide(); // Hide Form1
         }
     }
