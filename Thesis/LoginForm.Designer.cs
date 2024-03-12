@@ -33,8 +33,8 @@
             this.textBox1 = new System.Windows.Forms.TextBox();
             this.textBox2 = new System.Windows.Forms.TextBox();
             this.label2 = new System.Windows.Forms.Label();
-            this.customButton1 = new CustomControls.RJControls.CustomButton1();
             this.customButton2 = new CustomControls.RJControls.CustomButton1();
+            this.customButton1 = new CustomControls.RJControls.CustomButton1();
             this.SuspendLayout();
             // 
             // panel1
@@ -87,25 +87,6 @@
             this.label2.TabIndex = 4;
             this.label2.Text = "Password";
             // 
-            // customButton1
-            // 
-            this.customButton1.BackColor = System.Drawing.Color.Gold;
-            this.customButton1.BackgroundColor = System.Drawing.Color.Gold;
-            this.customButton1.BorderColor = System.Drawing.Color.Transparent;
-            this.customButton1.BorderRadius = 0;
-            this.customButton1.BorderSize = 0;
-            this.customButton1.FlatAppearance.BorderSize = 0;
-            this.customButton1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.customButton1.Font = new System.Drawing.Font("Arial", 24F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.customButton1.ForeColor = System.Drawing.Color.Black;
-            this.customButton1.Location = new System.Drawing.Point(183, 449);
-            this.customButton1.Name = "customButton1";
-            this.customButton1.Size = new System.Drawing.Size(369, 69);
-            this.customButton1.TabIndex = 6;
-            this.customButton1.Text = "Login";
-            this.customButton1.TextColor = System.Drawing.Color.Black;
-            this.customButton1.UseVisualStyleBackColor = false;
-            // 
             // customButton2
             // 
             this.customButton2.BackColor = System.Drawing.Color.Gold;
@@ -125,6 +106,26 @@
             this.customButton2.TextColor = System.Drawing.Color.Black;
             this.customButton2.UseVisualStyleBackColor = false;
             this.customButton2.Click += new System.EventHandler(this.customButton2_Click);
+            // 
+            // customButton1
+            // 
+            this.customButton1.BackColor = System.Drawing.Color.Gold;
+            this.customButton1.BackgroundColor = System.Drawing.Color.Gold;
+            this.customButton1.BorderColor = System.Drawing.Color.Transparent;
+            this.customButton1.BorderRadius = 0;
+            this.customButton1.BorderSize = 0;
+            this.customButton1.FlatAppearance.BorderSize = 0;
+            this.customButton1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.customButton1.Font = new System.Drawing.Font("Arial", 24F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.customButton1.ForeColor = System.Drawing.Color.Black;
+            this.customButton1.Location = new System.Drawing.Point(183, 449);
+            this.customButton1.Name = "customButton1";
+            this.customButton1.Size = new System.Drawing.Size(369, 69);
+            this.customButton1.TabIndex = 6;
+            this.customButton1.Text = "Login";
+            this.customButton1.TextColor = System.Drawing.Color.Black;
+            this.customButton1.UseVisualStyleBackColor = false;
+            this.customButton1.Click += new System.EventHandler(this.customButton1_Click);
             // 
             // LoginForm
             // 

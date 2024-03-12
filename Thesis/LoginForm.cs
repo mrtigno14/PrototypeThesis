@@ -31,5 +31,10 @@ namespace Thesis
             f1.Show();
             this.Hide(); // Hide Form1
         }
+
+        private void customButton1_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }
