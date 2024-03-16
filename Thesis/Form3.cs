@@ -129,18 +129,33 @@ namespace Thesis
         {
             pictureBox1ClickCount++;
 
-
             // Determine the price based on the PictureBox clicked
             int price = paracetamolPrice(pictureBox1ClickCount); // Implement this method to associate price with PictureBox
 
-            // Create and configure the label
-            Label picture1 = new Label();
-            picture1.Text = "Paracetamol: " + pictureBox1ClickCount.ToString() + " - Price: Php" + price.ToString();
-            picture1.AutoSize = true;
+            // Check if a label for Paracetamol already exists
+            Label existingLabel = panel1.Controls.OfType<Label>().FirstOrDefault(lbl => lbl.Name == "ParacetamolLabel");
+            if (existingLabel != null)
+            {
+                // Update the existing label with new information
+                existingLabel.Text = "Paracetamol: " + pictureBox1ClickCount.ToString() + " - Price: Php" + price.ToString();
+            }
+            else
+            {
+                // Create and configure the label
+                Label picture1 = new Label();
+                picture1.Name = "ParacetamolLabel";
+                picture1.Text = "Paracetamol: " + pictureBox1ClickCount.ToString() + " - Price: Php" + price.ToString();
+                picture1.AutoSize = true;
 
-            // Add the label to the panel at index 0
-            panel1.Controls.Add(picture1);
-            panel1.Controls.SetChildIndex(picture1, 0);
+                // Calculate Y-position for the label
+                int newY = panel1.Controls.Count * picture1.Height;
+
+                // Set the location of the label
+                picture1.Location = new Point(0, newY);
+
+                // Add the label to the panel
+                panel1.Controls.Add(picture1);
+            }
         }
 
         private void customButton1_Click(object sender, EventArgs e)
@@ -148,6 +163,7 @@ namespace Thesis
             panel1.Controls.Clear();
             pictureBox1ClickCount = 0;
             pictureBox2ClickCount = 0;
+
         }
 
         private void checkoutButton_Click(object sender, EventArgs e)
@@ -176,18 +192,33 @@ namespace Thesis
         {
             pictureBox2ClickCount++;
 
-
             // Determine the price based on the PictureBox clicked
             int price = neozepPrice(pictureBox2ClickCount); // Implement this method to associate price with PictureBox
 
-            // Create and configure the label
-            Label picture2 = new Label();
-            picture2.Text = "Neozep: " + pictureBox2ClickCount.ToString() + " - Price: Php" + price.ToString();
-            picture2.AutoSize = true;
+            // Check if a label for Neozep already exists
+            Label existingLabel = panel1.Controls.OfType<Label>().FirstOrDefault(lbl => lbl.Name == "NeozepLabel");
+            if (existingLabel != null)
+            {
+                // Update the existing label with new information
+                existingLabel.Text = "Neozep: " + pictureBox2ClickCount.ToString() + " - Price: Php" + price.ToString();
+            }
+            else
+            {
+                // Create and configure the label
+                Label picture2 = new Label();
+                picture2.Name = "NeozepLabel";
+                picture2.Text = "Neozep: " + pictureBox2ClickCount.ToString() + " - Price: Php" + price.ToString();
+                picture2.AutoSize = true;
 
-            // Add the label to the panel at index 0
-            panel1.Controls.Add(picture2);
-            panel1.Controls.SetChildIndex(picture2, 0);
+                // Calculate Y-position for the label
+                int newY = panel1.Controls.Count * picture2.Height;
+
+                // Set the location of the label
+                picture2.Location = new Point(0, newY);
+
+                // Add the label to the panel
+                panel1.Controls.Add(picture2);
+            }
         }
     }
 }

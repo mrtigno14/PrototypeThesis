@@ -30,6 +30,8 @@
         {
             this.panel1 = new System.Windows.Forms.Panel();
             this.backButton = new CustomControls.RJControls.CustomButton1();
+            this.cashButton = new CustomControls.RJControls.CustomButton1();
+            this.ecashButton = new CustomControls.RJControls.CustomButton1();
             this.SuspendLayout();
             // 
             // panel1
@@ -61,12 +63,52 @@
             this.backButton.UseVisualStyleBackColor = false;
             this.backButton.Click += new System.EventHandler(this.backButton_Click);
             // 
+            // cashButton
+            // 
+            this.cashButton.BackColor = System.Drawing.Color.Gold;
+            this.cashButton.BackgroundColor = System.Drawing.Color.Gold;
+            this.cashButton.BorderColor = System.Drawing.Color.Transparent;
+            this.cashButton.BorderRadius = 0;
+            this.cashButton.BorderSize = 0;
+            this.cashButton.FlatAppearance.BorderSize = 0;
+            this.cashButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.cashButton.Font = new System.Drawing.Font("Arial", 24F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.cashButton.ForeColor = System.Drawing.Color.Black;
+            this.cashButton.Location = new System.Drawing.Point(195, 694);
+            this.cashButton.Name = "cashButton";
+            this.cashButton.Size = new System.Drawing.Size(369, 69);
+            this.cashButton.TabIndex = 9;
+            this.cashButton.Text = "Pay via Cash";
+            this.cashButton.TextColor = System.Drawing.Color.Black;
+            this.cashButton.UseVisualStyleBackColor = false;
+            // 
+            // ecashButton
+            // 
+            this.ecashButton.BackColor = System.Drawing.Color.Gold;
+            this.ecashButton.BackgroundColor = System.Drawing.Color.Gold;
+            this.ecashButton.BorderColor = System.Drawing.Color.Transparent;
+            this.ecashButton.BorderRadius = 0;
+            this.ecashButton.BorderSize = 0;
+            this.ecashButton.FlatAppearance.BorderSize = 0;
+            this.ecashButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.ecashButton.Font = new System.Drawing.Font("Arial", 24F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.ecashButton.ForeColor = System.Drawing.Color.Black;
+            this.ecashButton.Location = new System.Drawing.Point(752, 694);
+            this.ecashButton.Name = "ecashButton";
+            this.ecashButton.Size = new System.Drawing.Size(369, 69);
+            this.ecashButton.TabIndex = 10;
+            this.ecashButton.Text = "Pay via eCash";
+            this.ecashButton.TextColor = System.Drawing.Color.Black;
+            this.ecashButton.UseVisualStyleBackColor = false;
+            // 
             // orderSummary
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.HotPink;
-            this.ClientSize = new System.Drawing.Size(1155, 687);
+            this.ClientSize = new System.Drawing.Size(1155, 845);
+            this.Controls.Add(this.ecashButton);
+            this.Controls.Add(this.cashButton);
             this.Controls.Add(this.backButton);
             this.Controls.Add(this.panel1);
             this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
@@ -81,5 +123,7 @@
 
         private System.Windows.Forms.Panel panel1;
         private CustomControls.RJControls.CustomButton1 backButton;
+        private CustomControls.RJControls.CustomButton1 cashButton;
+        private CustomControls.RJControls.CustomButton1 ecashButton;
     }
 }
