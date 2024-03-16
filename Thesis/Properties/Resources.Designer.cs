@@ -73,9 +73,19 @@ namespace Thesis.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap koyuki {
+        internal static System.Drawing.Bitmap Neozep {
             get {
-                object obj = ResourceManager.GetObject("koyuki", resourceCulture);
+                object obj = ResourceManager.GetObject("Neozep", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap Paracetamol {
+            get {
+                object obj = ResourceManager.GetObject("Paracetamol", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
