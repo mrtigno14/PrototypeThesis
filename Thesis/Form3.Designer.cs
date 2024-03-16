@@ -48,6 +48,7 @@
             // 
             this.splitContainer1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.splitContainer1.Location = new System.Drawing.Point(0, 0);
+            this.splitContainer1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.splitContainer1.Name = "splitContainer1";
             // 
             // splitContainer1.Panel1
@@ -63,8 +64,9 @@
             // 
             this.splitContainer1.Panel2.Controls.Add(this.pictureBox2);
             this.splitContainer1.Panel2.Controls.Add(this.pictureBox1);
-            this.splitContainer1.Size = new System.Drawing.Size(1155, 845);
-            this.splitContainer1.SplitterDistance = 414;
+            this.splitContainer1.Size = new System.Drawing.Size(1868, 1040);
+            this.splitContainer1.SplitterDistance = 669;
+            this.splitContainer1.SplitterWidth = 5;
             this.splitContainer1.TabIndex = 0;
             // 
             // backButton
@@ -78,9 +80,10 @@
             this.backButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.backButton.Font = new System.Drawing.Font("Arial", 24F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.backButton.ForeColor = System.Drawing.Color.Black;
-            this.backButton.Location = new System.Drawing.Point(88, 11);
+            this.backButton.Location = new System.Drawing.Point(117, 14);
+            this.backButton.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.backButton.Name = "backButton";
-            this.backButton.Size = new System.Drawing.Size(369, 69);
+            this.backButton.Size = new System.Drawing.Size(492, 85);
             this.backButton.TabIndex = 7;
             this.backButton.Text = "Back";
             this.backButton.TextColor = System.Drawing.Color.Black;
@@ -98,9 +101,10 @@
             this.checkoutButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.checkoutButton.Font = new System.Drawing.Font("Arial", 24F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.checkoutButton.ForeColor = System.Drawing.Color.Black;
-            this.checkoutButton.Location = new System.Drawing.Point(88, 587);
+            this.checkoutButton.Location = new System.Drawing.Point(117, 722);
+            this.checkoutButton.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.checkoutButton.Name = "checkoutButton";
-            this.checkoutButton.Size = new System.Drawing.Size(369, 69);
+            this.checkoutButton.Size = new System.Drawing.Size(492, 85);
             this.checkoutButton.TabIndex = 6;
             this.checkoutButton.Text = "Proceed to Checkout";
             this.checkoutButton.TextColor = System.Drawing.Color.Black;
@@ -118,9 +122,10 @@
             this.customButton2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.customButton2.Font = new System.Drawing.Font("Arial", 24F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.customButton2.ForeColor = System.Drawing.Color.Black;
-            this.customButton2.Location = new System.Drawing.Point(103, 911);
+            this.customButton2.Location = new System.Drawing.Point(137, 1121);
+            this.customButton2.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.customButton2.Name = "customButton2";
-            this.customButton2.Size = new System.Drawing.Size(369, 69);
+            this.customButton2.Size = new System.Drawing.Size(492, 85);
             this.customButton2.TabIndex = 5;
             this.customButton2.Text = "Pay";
             this.customButton2.TextColor = System.Drawing.Color.Black;
@@ -137,9 +142,10 @@
             this.customButton1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.customButton1.Font = new System.Drawing.Font("Arial", 24F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.customButton1.ForeColor = System.Drawing.Color.Black;
-            this.customButton1.Location = new System.Drawing.Point(88, 696);
+            this.customButton1.Location = new System.Drawing.Point(117, 857);
+            this.customButton1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.customButton1.Name = "customButton1";
-            this.customButton1.Size = new System.Drawing.Size(369, 69);
+            this.customButton1.Size = new System.Drawing.Size(492, 85);
             this.customButton1.TabIndex = 4;
             this.customButton1.Text = "Clear All";
             this.customButton1.TextColor = System.Drawing.Color.Black;
@@ -149,9 +155,10 @@
             // panel1
             // 
             this.panel1.BackColor = System.Drawing.Color.White;
-            this.panel1.Location = new System.Drawing.Point(25, 99);
+            this.panel1.Location = new System.Drawing.Point(33, 122);
+            this.panel1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(476, 433);
+            this.panel1.Size = new System.Drawing.Size(635, 533);
             this.panel1.TabIndex = 0;
             // 
             // pictureBox2
@@ -159,9 +166,10 @@
             this.pictureBox2.ErrorImage = null;
             this.pictureBox2.Image = global::Thesis.Properties.Resources.Neozep;
             this.pictureBox2.InitialImage = null;
-            this.pictureBox2.Location = new System.Drawing.Point(586, 74);
+            this.pictureBox2.Location = new System.Drawing.Point(781, 91);
+            this.pictureBox2.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.pictureBox2.Name = "pictureBox2";
-            this.pictureBox2.Size = new System.Drawing.Size(282, 269);
+            this.pictureBox2.Size = new System.Drawing.Size(376, 331);
             this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox2.TabIndex = 1;
             this.pictureBox2.TabStop = false;
@@ -172,9 +180,10 @@
             this.pictureBox1.ErrorImage = null;
             this.pictureBox1.Image = global::Thesis.Properties.Resources.Paracetamol;
             this.pictureBox1.InitialImage = null;
-            this.pictureBox1.Location = new System.Drawing.Point(235, 74);
+            this.pictureBox1.Location = new System.Drawing.Point(313, 91);
+            this.pictureBox1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(282, 269);
+            this.pictureBox1.Size = new System.Drawing.Size(376, 331);
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox1.TabIndex = 0;
             this.pictureBox1.TabStop = false;
@@ -182,10 +191,11 @@
             // 
             // Form3
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1155, 845);
+            this.ClientSize = new System.Drawing.Size(1868, 1040);
             this.Controls.Add(this.splitContainer1);
+            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.Name = "Form3";
             this.Text = "Form3";
             this.splitContainer1.Panel1.ResumeLayout(false);

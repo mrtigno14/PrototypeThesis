@@ -44,14 +44,14 @@ namespace Thesis
             if (existingLabel != null)
             {
                 // Update the existing label with new information
-                existingLabel.Text = $"{productName}: {GetQuantity(productName)} - Total Price: Php{totalPrice}";
+                existingLabel.Text = $"{productName}: {GetQuantity(productName)} - \u20B1{totalPrice}";
             }
             else
             {
                 // Create and configure the label
                 Label newLabel = new Label();
                 newLabel.Name = productName + "Label";
-                newLabel.Text = $"{productName}: {GetQuantity(productName)} - Total Price: Php{totalPrice}";
+                newLabel.Text = $"{productName}: {GetQuantity(productName)} - \u20B1{totalPrice}";
                 newLabel.AutoSize = true;
 
                 // Calculate Y-position for the label
@@ -93,11 +93,31 @@ namespace Thesis
                 return;
             }
 
+            // Prepare the order items
+            Dictionary<string, int> orderItems = new Dictionary<string, int>();
+            if(pictureBox1Quantity != 0)
+            {
+                orderItems.Add("Paracetamol", pictureBox1Quantity * paracetamolPricePerUnit);
+            }
+
+            if (pictureBox2Quantity != 0)
+            {
+                orderItems.Add("Neozep", pictureBox2Quantity * neozepPricePerUnit);
+            }
+            
+
+            // Create orderSummary form and pass the orderItems
             orderSummary f4 = new orderSummary();
+            f4.UpdateOrderSummary(orderItems);
+
+            // Handle form closing event
             f4.FormClosed += (s, args) => this.Close();
+
+            // Show orderSummary form and hide current form
             f4.Show();
             this.Hide();
         }
+
 
         private void backButton_Click(object sender, EventArgs e)
         {

@@ -46,13 +46,18 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="cash.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="cash.Designer.cs">
+      <DependentUpon>cash.cs</DependentUpon>
+    </Compile>
     <Compile Include="customButton.cs">
       <SubType>Component</SubType>
     </Compile>
     <Compile Include="customButton1.cs">
       <SubType>Component</SubType>
     </Compile>
-    <Compile Include="DB.cs" />
     <Compile Include="Form1.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -85,6 +90,9 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="cash.resx">
+      <DependentUpon>cash.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Form1.resx">
       <DependentUpon>Form1.cs</DependentUpon>
     </EmbeddedResource>
