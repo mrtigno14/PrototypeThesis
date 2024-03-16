@@ -44,6 +44,7 @@
             // 
             this.splitContainer1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.splitContainer1.Location = new System.Drawing.Point(0, 0);
+            this.splitContainer1.Margin = new System.Windows.Forms.Padding(4);
             this.splitContainer1.Name = "splitContainer1";
             // 
             // splitContainer1.Panel1
@@ -57,8 +58,9 @@
             // splitContainer1.Panel2
             // 
             this.splitContainer1.Panel2.Controls.Add(this.pictureBox1);
-            this.splitContainer1.Size = new System.Drawing.Size(1466, 1061);
-            this.splitContainer1.SplitterDistance = 526;
+            this.splitContainer1.Size = new System.Drawing.Size(1924, 1055);
+            this.splitContainer1.SplitterDistance = 690;
+            this.splitContainer1.SplitterWidth = 5;
             this.splitContainer1.TabIndex = 0;
             // 
             // customButton2
@@ -72,9 +74,10 @@
             this.customButton2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.customButton2.Font = new System.Drawing.Font("Arial", 24F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.customButton2.ForeColor = System.Drawing.Color.Black;
-            this.customButton2.Location = new System.Drawing.Point(103, 911);
+            this.customButton2.Location = new System.Drawing.Point(137, 1121);
+            this.customButton2.Margin = new System.Windows.Forms.Padding(4);
             this.customButton2.Name = "customButton2";
-            this.customButton2.Size = new System.Drawing.Size(369, 69);
+            this.customButton2.Size = new System.Drawing.Size(492, 85);
             this.customButton2.TabIndex = 5;
             this.customButton2.Text = "Pay";
             this.customButton2.TextColor = System.Drawing.Color.Black;
@@ -91,28 +94,32 @@
             this.customButton1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.customButton1.Font = new System.Drawing.Font("Arial", 24F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.customButton1.ForeColor = System.Drawing.Color.Black;
-            this.customButton1.Location = new System.Drawing.Point(103, 836);
+            this.customButton1.Location = new System.Drawing.Point(118, 857);
+            this.customButton1.Margin = new System.Windows.Forms.Padding(4);
             this.customButton1.Name = "customButton1";
-            this.customButton1.Size = new System.Drawing.Size(369, 69);
+            this.customButton1.Size = new System.Drawing.Size(492, 85);
             this.customButton1.TabIndex = 4;
             this.customButton1.Text = "Clear All";
             this.customButton1.TextColor = System.Drawing.Color.Black;
             this.customButton1.UseVisualStyleBackColor = false;
+            this.customButton1.Click += new System.EventHandler(this.customButton1_Click);
             // 
             // panel1
             // 
             this.panel1.BackColor = System.Drawing.Color.White;
-            this.panel1.Location = new System.Drawing.Point(30, 33);
+            this.panel1.Location = new System.Drawing.Point(40, 41);
+            this.panel1.Margin = new System.Windows.Forms.Padding(4);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(476, 764);
+            this.panel1.Size = new System.Drawing.Size(635, 736);
             this.panel1.TabIndex = 0;
             // 
             // pictureBox1
             // 
             this.pictureBox1.Image = global::Thesis.Properties.Resources.koyuki;
-            this.pictureBox1.Location = new System.Drawing.Point(235, 74);
+            this.pictureBox1.Location = new System.Drawing.Point(313, 91);
+            this.pictureBox1.Margin = new System.Windows.Forms.Padding(4);
             this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(282, 269);
+            this.pictureBox1.Size = new System.Drawing.Size(376, 331);
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox1.TabIndex = 0;
             this.pictureBox1.TabStop = false;
@@ -120,10 +127,11 @@
             // 
             // Form3
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1466, 1061);
+            this.ClientSize = new System.Drawing.Size(1924, 1055);
             this.Controls.Add(this.splitContainer1);
+            this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "Form3";
             this.Text = "Form3";
             this.Load += new System.EventHandler(this.Form3_Load);

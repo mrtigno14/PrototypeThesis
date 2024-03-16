@@ -16,9 +16,13 @@ namespace Thesis
         {
             InitializeComponent();
 
-
             WindowState = FormWindowState.Maximized;
+
+
         }
+
+        public int pictureBoxClickCount = 0;
+
 
         private void Form3_Load(object sender, EventArgs e)
         {
@@ -37,8 +41,22 @@ namespace Thesis
 
         private void pictureBox1_Click(object sender, EventArgs e)
         {
-            // Perform actions when the PictureBox (image button) is clicked
-            MessageBox.Show("PictureBox clicked!");
+            pictureBoxClickCount++;
+
+            // Create and configure the label
+            Label picture1 = new Label();
+            picture1.Text = "Nihaha: " + pictureBoxClickCount.ToString();
+            picture1.AutoSize = true;
+
+            // Add the label to the panel at index 0
+            panel1.Controls.Add(picture1);
+            panel1.Controls.SetChildIndex(picture1, 0);
+        }
+
+        private void customButton1_Click(object sender, EventArgs e)
+        {
+            panel1.Controls.Clear();
+            pictureBoxClickCount = 0;
         }
     }
 }
